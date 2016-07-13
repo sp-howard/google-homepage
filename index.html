@@ -1,58 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Google</title>
-	<link rel="stylesheet" href="styles/style.css" type="text/css">
-	<link href="./images/googleg_lodp.ico" rel="shortcut icon">
+    <meta charset="UTF-8">
+    <title>Google</title>
+    <link rel="stylesheet" href="styles/home.css" type="text/css">
+    <link href="./images/googleg_lodp.ico" rel="shortcut icon">
 </head>
+
 <body>
 
-	<div id="head">
-		<ul>
-			<li><a href="#">Gmail</a></li>
-			<li><a href="#">Images</a></li>
-			<li><a href="#"><div id="notification"></div></a></li>
-			<li><a href="#"><div id="app"></div></a></li>
-			<li><a href="#"><img src="images/photo.png" id="user"></a></li>
-		</ul>
-	</div>
+    <div id="head">
+        <ul>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+            <li>
+                <a href="#">
+                    <div id="notification"></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div id="app"></div>
+                </a>
+            </li>
+            <li>
+                <a href="#"><img src="images/photo.png" id="user"></a>
+            </li>
+        </ul>
+    </div>
 
-	<div id="logo">
-		<img src="images/logo.png" alt="">
-	</div>
+    <div id="logo">
+        <img src="images/logo.png" alt="">
+    </div>
 
-	<div id="search">
-		<form action="#" method="POST" id="s-bar">
-			<input type="text"  value="Russell Wilson">
+    <div class="search">
+        <form action="#" method="POST" id="s-bar">
+            <input type="text" value="Russell Wilson" id="s-bar-input">
+        </form>
+        <div id="s-mic">
+            <img src="images/microphone.png" alt="Search by voice" id="mic">
+        </div>
+    </div>
 
-		</form>
-		<div id="s-mic">
-			<img src="images/microphone.png" alt="Search by voice" id="mic">
-		</div>
-	</div>
+    <div id="buttons">
+        <a href="./results/index.html">
+            <button class="button">Google Search</button>
+        </a>
+        <a href="#">
+            <button class="button">I'm Feeling Lucky</button>
+        </a>
+    </div>
 
-	<div id="buttons">
-		<a href="./wilson.html"><button class="button">Google Search</button></button></a>
-		<a href="#"><button class="button">I'm Feeling Lucky</button></button></a>
-	</div>
+    <div id="footer">
+        <div id="f-left">
+            <ul>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+        <div id="f-right">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/home.js"></script>
 
-	<div id="footer">
-		<div id="f-left">
-			<ul>
-				<li><a href="#">Advertising</a></li>
-				<li><a href="#">Business</a></li>
-				<li><a href="#">About</a></li>
-			</ul>			
-		</div>
-		<div id="f-right">
-			<ul>
-				<li><a href="#">Privacy</a></li>
-				<li><a href="#">Terms</a></li>
-				<li><a href="#">Settings</a></li>
-			</ul>			
-		</div>
-	</div>
-
+</script>
 </body>
+
 </html>
